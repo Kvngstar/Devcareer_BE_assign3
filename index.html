@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Social Media Redactor</title>
+
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600&family=Inter:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<h1>
+			<span class="title"><big>Scramble</big> </span> Your Secrets
+		</h1>
+		<div
+			class="form"
+			id="redact-form"
+		>
+			<!-- Input fields for message, words to scramble, and key for replacement -->
+			<label for="message">Enter your message:</label>
+			<textarea
+				id="message"
+				name="message"
+				rows="5"
+				value=""
+			></textarea>
+			<br />
+			<label for="words">Words to scramble (separated by space):</label>
+			<input
+				type="text"
+				id="words"
+				name="words"
+				placeholder="e.g. password address"
+			/>
+			<br />
+			<label for="key">What to use (*, #, etc.)</label>
+			<input
+				type="text"
+				id="key"
+				name="key"
+				placeholder="e.g. *"
+			/>
+			<br />
+			<!-- Button to trigger redaction -->
+			<button
+				type="submit"
+				id="myButton"
+			>
+				Redact Now
+			</button>
+
+			<!-- Display areas for statistics -->
+			<div class="NumOfWords">
+				Total Number of Words: <span id="NumOfWord"></span>
+			</div>
+			<div class="NumOfMatches">
+				Number of Matched Words: <span id="NumOfMatches"></span>
+			</div>
+			<div class="NumOfChars">
+				Number of Characters: <span id="NumOfChars"></span>
+			</div>
+		</div>
+		<!-- Display area for redacted message -->
+		<div id="redacted-message">
+			<div class="copy_text">
+				<span
+					class="copy_center"
+					id="copy"
+					>Copy text</span
+				>
+			</div>
+			<div id="message_box"></div>
+		</div>
+		<script src="./script.js"></script>
+        <footer class="">Buit By <\Kingsley></footer>
+	</body>
+</html>

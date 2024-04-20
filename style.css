@@ -1,0 +1,87 @@
+body {
+	font-family: "Be Vietnam Pro";
+	margin: 0;
+	padding: 20px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: "Be Vietnam Pro", sans-serif;
+}
+.title {
+	color: #a52465;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 0px 14px;
+}
+
+label {
+	font-weight: bold;
+}
+
+textarea,
+input[type="text"] {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 100%;
+	font-family: inter;
+	line-height: 1.6em;
+}
+button {
+	background-color: #a52465;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: large;
+	margin-bottom: 20px;
+}
+
+#redacted-message {
+	margin-top: 30px;
+	padding: 20px 30px;
+	border: 1px solid #c1c1c1;
+	background-color: #fafafa;
+	font-family: inter;
+	font-weight: regular;
+	border-radius: 7px;
+	display: none;
+	flex-direction: column;
+	line-height: 1.8rem;
+    text-justify: distribute-all-lines;
+}
+#message_box{
+    padding-bottom: 10px;
+}
+button:hover {
+	background-color: #a52464df;
+}
+.NumOfMatches,
+.NumOfWords,
+.NumOfChars {
+	margin-top: 4px;
+}
+.copy_text {
+	text-align: right;
+	/* background-color: #432132; */
+    
+    padding: 10px 20px;
+}
+.copy_center {
+	background-color: #eeeeee;
+	padding: 4px 6px;
+
+	border-radius: 4px;
+}
+footer{
+    margin-top:50px ;
+text-align: center;
+color: #a52465;
+}
